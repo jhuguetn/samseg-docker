@@ -1,13 +1,13 @@
 # SAMSEG Docker image
 
 [![GitHub release](https://img.shields.io/github/v/release/jhuguetn/samseg-docker?logo=github)](https://github.com/jhuguetn/samseg-docker/releases)
-[![DockerHub pulls](https://img.shields.io/docker/pulls/jhuguetn/samseg-docker?logo=docker)](https://hub.docker.com/r/jhuguetn/samseg-docker/tags)
+[![DockerHub pulls](https://img.shields.io/docker/pulls/jhuguetn/samseg?logo=docker)](https://hub.docker.com/r/jhuguetn/samseg-docker/tags)
 
 Lightweight Docker image for reproducible **FreeSurfer SAMSEG** execution.
 
 - FreeSurfer SAMSEG: https://surfer.nmr.mgh.harvard.edu/fswiki/Samseg
 
-Find the image in Docker Hub [here](https://hub.docker.com/r/jhuguetn/samseg-docker).
+Find the image in Docker Hub [here](https://hub.docker.com/r/jhuguetn/samseg).
 
 ## Components
 
