@@ -21,7 +21,7 @@ while excluding unrelated FreeSurfer components.
 ## Usage
 
 ```bash
-docker run --rm -it jhuguetn/samseg-docker:7.4.1 --help
+docker run --rm -it jhuguetn/samseg:7.4.1 --help
 ```
 
 Example T1w segmentation:
@@ -31,7 +31,7 @@ mkdir -p ./data/out
 
 docker run --rm -it \
   -v $(pwd)/data:/data \
-  jhuguetn/samseg-docker:7.4.1 \
+  jhuguetn/samseg:7.4.1 \
   --input /data/T1w.nii.gz \
   --output /data/out \
   --threads 4
