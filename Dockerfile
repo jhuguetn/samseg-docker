@@ -22,11 +22,11 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
     libgomp1 \
     && rm -rf /var/lib/apt/lists/*
 
-# Copy SAMSEG executables/utilities and Python distribution from official FreeSurfer 7.4.1 image
+# Copy SAMSEG executables, Python runtime, atlas resources, and other required FreeSurfer files
 COPY --from=fs7 /usr/local/freesurfer/bin/run_samseg ${FREESURFER_HOME}/bin/run_samseg
-COPY --from=fs7 /usr/local/freesurfer/bin/samseg ${FREESURFER_HOME}/bin/samseg
 COPY --from=fs7 /usr/local/freesurfer/bin/fspython ${FREESURFER_HOME}/bin/fspython
 COPY --from=fs7 /usr/local/freesurfer/python ${FREESURFER_HOME}/python
+COPY --from=fs7 /usr/local/freesurfer/average/samseg ${FREESURFER_HOME}/average/samseg
 COPY --from=fs7 /usr/local/freesurfer/FreeSurferColorLUT.txt ${FREESURFER_HOME}/FreeSurferColorLUT.txt
 COPY --from=fs7 /usr/local/freesurfer/subjects/fsaverage/mri/orig.mgz ${FREESURFER_HOME}/subjects/fsaverage/mri/orig.mgz
 
